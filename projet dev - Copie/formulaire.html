@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="a">
+      <video src="video/plage.mp4" muted loop autoplay></video>
+    </div>
+    <div class="corona">
+      <header>
+        <img src="image/images.png" alt="corona" />
+        <h1>Corona Virus</h1>
+      </header>
+      <div class="c">
+        <nav>
+          <ul>
+            <li><a href="corona.html">corona</a></li>
+            <li>
+              <a href="solution_de_protection.html">solution de protection</a>
+            </li>
+            <li><a href="exemple_de_vaccin.html">exemple de vaccin</a></li>
+            <li><a href="formulaire.html">formulaire</a></li>
+          </ul>
+        </nav>
+        <main>
+          <form action="page.php" method="post">
+            <label for="name">nom:</label>
+            <input type="text" name="nom" id="name" />
+            <label for="prenom">prenom:</label>
+            <input type="text" name="prenom" id="prenom" />
+            <label for="date">date naissance:</label>
+            <input type="date" name="date" id="date" />
+            <label for="type">type:</label>
+            <select name="type" id="type">
+              <option value="">choix du vaccin</option>
+              <option value="AstraZeneca">AstraZeneca</option>
+              <option value="Moderna">Moderna</option>
+              <option value="Janssen">Janssen</option>
+            </select>
+            <label for="genre">genre:</label>
+            <div>
+              <input type="radio" name="homme" id="genre" /><span>homme</span
+              ><br />
+              <input type="radio" name="femme" id="genre" /><span>femme</span>
+            </div>
+            <div>
+              <input type="submit" value="valider" />
+              <input type="reset" value="annuler" />
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

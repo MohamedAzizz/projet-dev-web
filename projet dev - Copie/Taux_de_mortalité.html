@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau sur le Taux de Mortalité</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #3498db, #c0392b);
+      }
+
+      table {
+        width: 80%;
+        margin: 50px auto;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+        background-color: #fff;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #3498db;
+        color: #fff;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      button a {
+        text-decoration: none;
+        color: black;
+      }
+      button {
+        --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
+        --accent: fuchsia;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        border: none;
+        border-radius: 1.1em;
+        background-color: #212121;
+        color: white;
+        padding: 1em 2em;
+        transition: box-shadow ease-in-out 0.3s,
+          background-color ease-in-out 0.1s, letter-spacing ease-in-out 0.1s,
+          transform ease-in-out 0.1s;
+        box-shadow: 13px 13px 10px #1c1c1c, -13px -13px 10px #262626;
+      }
+
+      button:hover {
+        box-shadow: var(--hover-shadows);
+      }
+
+      button:active {
+        box-shadow: var(--hover-shadows), var(--accent) 0px 0px 30px 5px;
+        background-color: var(--accent);
+        transform: scale(0.95);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Taux de Mortalité dans Différentes Catégories</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Catégorie</th>
+          <th>Nombre de Décès</th>
+          <th>Nombre de Cas Confirmés</th>
+          <th>Taux de Mortalité (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Global</td>
+          <td>3,000,000</td>
+          <td>100,000,000</td>
+          <td>3.00</td>
+        </tr>
+        <tr>
+          <td>Personnes âgées (65+)</td>
+          <td>500,000</td>
+          <td>2,000,000</td>
+          <td>25.00</td>
+        </tr>
+        <tr>
+          <td>Personnes atteintes de maladies chroniques</td>
+          <td>200,000</td>
+          <td>500,000</td>
+          <td>40.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <button><a href="corona.html">Retour</a></button>
+  </body>
+</html>
